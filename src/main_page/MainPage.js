@@ -7,22 +7,27 @@ const MainPage = () => {
     <div className={classes.wrapper}>
       <div className={classes.wrapper__inf}>
         <div className={classes.burger}>
-          <p>Это будет для бургера</p>
+          <p>Это</p>
         </div>
         <div className={classes.header}>
-          <h2>Need for drive</h2>
+          <h3>Need for drive</h3>
           <img src={navigationIcon} alt="icon navigation" />
         </div>
         <main className={classes.main}>
-          <p>Это будет main</p>
+          <h1>Каршеринг</h1>
+          <h2>Need for drive</h2>
+          <h4>Поминутная аренда авто твоего города</h4>
+          <button>
+             Забронировать
+          </button>
         </main>
         <footer className={classes.footer}>
-          <p>Это будет fother</p>
+        <p>© 2016-2019 «Need for drive»</p>
+        <p>8 (495) 234-22-44</p>
         </footer>
       </div>
 
       <div className={classes.wrapper__slider}>
-        <p>Это будет слайдер</p>
       </div>
     </div>
   );

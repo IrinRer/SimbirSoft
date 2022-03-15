@@ -1,0 +1,24 @@
+@mixin create_btn() {
+    
+}
+
+
+@mixin btn_default_color($bg:linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%)) {
+    background: $bg;
+}  
+
+@mixin btn_hover_color($bg:linear-gradient(90deg, #0B934A 2.61%, #026E47 112.6%)) {
+    background: $bg;
+}  
+
+@mixin btn_click_color($bg:linear-gradient(90deg, #076432 2.61%, #013C27 112.6%)) {
+    background: $bg;
+}  
+
+@mixin btn_selected_color($bg:linear-gradient(90deg, #0B934A 2.61%, #026E47 112.6%)) {
+    background: $bg;
+}  
+
+@mixin btn_blocked_color($bg:#EEEEEE) {
+    background: $bg;
+}  
