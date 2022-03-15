@@ -4,6 +4,7 @@
 
 .main {
     padding: 64px;
+    grid-area: c;
   
     h1 {
       @include text.text_title(70px, 66px, color.$main_black);
@@ -28,7 +29,7 @@
       border: none;
       width: 250px;
       height: 48px;
-      margin-top: 60px;
+      margin-top: 10%;
     }
   }
   

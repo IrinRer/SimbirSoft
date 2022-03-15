@@ -4,15 +4,21 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 0 64px 32px 64px;
+  padding: 0 64px 0 64px;
+  grid-area: f;
+
 
   p {
     &:first-child {
       @include text.text_title(13px, 15px, color.$grey_dark, $fw: 400);
+      margin: 0;
+      margin-bottom: 32px;
     }
 
     &:last-child {
       @include text.text_title(13px, 15px, color.$main_black, $fw: 400);
+      margin: 0;
+      margin-bottom: 32px;
     }
   }
 }

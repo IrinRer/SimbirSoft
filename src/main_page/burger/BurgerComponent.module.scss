@@ -3,12 +3,11 @@
 
 .burger {
   background-color: color.$main_black;
-  grid-row: 1 / 5;
-  grid-column: 1;
   padding-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  grid-area: b;
 
   .stripe {
     margin: auto;
