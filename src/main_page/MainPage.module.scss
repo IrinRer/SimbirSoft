@@ -1,0 +1,48 @@
+@use "../style/color.scss";
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: auto;
+}
+
+.wrapper__inf {
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-rows: auto;
+
+  .burger {
+    background-color: aqua;
+    grid-row: 1 / 5;
+    grid-column: 1;
+  }
+
+  .header {
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        color: color.$main_accent;
+        margin: 0;
+    }
+  }
+
+  .main {
+    background-color: tomato;
+    height: 1000px;
+  }
+
+  .footer {
+    background-color: cadetblue;
+  }
+}
+
+.wrapper__slider {
+  border: 2px solid darkblue;
+}
