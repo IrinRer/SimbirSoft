@@ -1,0 +1,14 @@
+@use '../../style/text.scss';
+@use '../../style/color.scss';
+
+.header {
+  padding: 0 64px 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h3 {
+    @include text.text_title(30px, 35px, color.$main_accent);
+    margin-top: 32px;
+  }
+}

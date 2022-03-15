@@ -1,0 +1,27 @@
+@use '../../style/color.scss';
+@use '../../style/text.scss';
+
+.burger {
+  background-color: color.$main_black;
+  grid-row: 1 / 5;
+  grid-column: 1;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .stripe {
+    margin: auto;
+    width: 42%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 5px;
+  }
+
+  .change_lang {
+    @include text.text_title(13px, 15px, color.$main_accent, $fw: 700);
+    text-align: center;
+    margin-bottom: 32px;
+  }
+}

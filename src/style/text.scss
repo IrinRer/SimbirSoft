@@ -1,0 +1,8 @@
+@mixin text_title($fsize, $lh, $color, $fstyle: normal, $fw: 700, $m: 0) {
+  font-style: $fstyle;
+  font-weight: $fw;
+  font-size: $fsize;
+  line-height: $lh;
+  color: $color;
+  margin: $m;
+}

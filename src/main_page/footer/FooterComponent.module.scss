@@ -1,0 +1,18 @@
+@use '../../style/text.scss';
+@use '../../style/color.scss';
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 64px 32px 64px;
+
+  p {
+    &:first-child {
+      @include text.text_title(13px, 15px, color.$grey_dark, $fw: 400);
+    }
+
+    &:last-child {
+      @include text.text_title(13px, 15px, color.$main_black, $fw: 400);
+    }
+  }
+}
