@@ -2,7 +2,7 @@
 @use '../../style/color.scss';
 
 .header {
-  padding: 3% 0px 3% 6%;
+  padding: 3% 6% 3% 6%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,5 +10,16 @@
 
   h3 {
     @include text.text_title(30px, 35px, color.$main_accent);
+  }
+}
+
+.header__navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  p {
+    @include text.text_title(14px, 16px, color.$grey_dark, $fw: 400);
+    margin-left: 8px;
   }
 }

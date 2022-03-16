@@ -1,0 +1,68 @@
+@use '../../style/text.scss';
+@use '../../style/color.scss';
+@use '../../style/button.scss';
+
+
+.wrapper {
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../img/for_main_page/slider/bg_slider.png') no-repeat;
+    filter: brightness(-30);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper__slider {
+
+  display: flex;
+  flex-direction: row;
+
+  img {
+    width: 8px;
+    height: 18px;
+    margin-top: 90vh;
+    margin-left: 28px;
+    margin-right: 28px;
+    cursor: pointer;
+  }
+}
+
+.slider__inf {
+  margin-top: 47vh;
+  margin-left: 60px;
+  margin-right: 50px;
+
+  h2 {
+    @include text.text_title(40px, 47px, white, $fw: 500);
+    margin-bottom: 10px;
+  }
+
+  p {
+    @include text.text_title(2vw, 30px, white, $fw: 300);
+    max-width: 500px;
+    
+  }
+
+  button {
+    @include text.text_title(18px, 21px, white, $fw: 500);
+    @include button.create_btn(164px, 48px, $br: 4px, $b: none);
+    background: linear-gradient(90deg, #13493f 0%, #0c7b1b 100%);
+    margin-top: 32px;
+  }
+}
+
+.switches {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 32px;
+
+    .switches__item {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: color.$grey_light;
+      margin-right: 8px;
+    }
+}

@@ -4,18 +4,18 @@ import BurgerComponent from './burger/BurgerComponent';
 import HeaderComponent from './header/HeaderComponent';
 import ContentComponent from './content/ContentComponent';
 import FooterComponent from './footer/FooterComponent';
+import SliderComponent from './slider/SliderComponent';
 
 const MainPage = () => {
   return (
     <div className={classes.wrapper}>
       <div className={classes.wrapper__inf}>
-        <BurgerComponent/>
-        <HeaderComponent/>
-        <ContentComponent/>
-        <FooterComponent/>
+        <BurgerComponent />
+        <HeaderComponent />
+        <ContentComponent />
+        <FooterComponent />
       </div>
-
-      <div className={classes.wrapper__slider}></div>
+      <SliderComponent />
     </div>
   );
 };

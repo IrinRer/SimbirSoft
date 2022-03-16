@@ -1,5 +1,9 @@
-@mixin create_btn() {
-    
+@mixin create_btn($w, $h, $br: 8px, $bsh: 0px 2px 4px rgba(90, 97, 105, 0.12), $b: none) {
+    border-radius: $br;
+    box-shadow:  $bsh;
+    border: $b;
+    width: $w;
+    height:  $h;
 }
 
 
